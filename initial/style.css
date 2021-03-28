@@ -1,0 +1,122 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 70%;
+    height: 100vh;
+    
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+    
+}
+
+.goat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 10%;
+}
+
+.content .text{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 8%;
+}
+
+.text{
+    font-size: 100%;
+}
+.text h1{
+    font-size: 700%;
+    color: #72005F;
+}
+.text h2{
+    font-size: 325%;
+    color: #BAA193;
+}
+
+.advice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes btn{
+    0%{background-color: #72005F;color:white}
+    100%{background-color: white;color: #72005F;border:1px solid #72005F }
+}
+
+
+.botao{
+    height: 55px;
+    width: 250px;
+    border: 0;
+    margin-bottom: 20%;
+    border-radius: 18px;
+    background-color: #72005F;
+    color: white;
+    font-size: 20px;
+    outline-style: none;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: #72005F;
+    border:1px solid #72005F 
+}
+
+@keyframes levitate{
+    
+}
+
+.goat img{
+    width: 75%;
+    animation-name: levitate;
+    animation-iteration-count: infinite;
+    animation-duration: 3.5s;
+}
+
+@media screen and (max-width:700px){
+    .container{
+        flex-direction: column;
+        justify-content: space-evenly;
+        display: flex;
+    }
+    
+    .content{
+        display: flex;
+    }
+
+    .goat img{
+        animation: none;
+        display: none;
+    }
+}
