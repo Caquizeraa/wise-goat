@@ -94,7 +94,9 @@ body{
 }
 
 @keyframes levitate{
-    
+    0%{margin-bottom: 0%;}
+    50%{margin-bottom: 10%;}
+    0%{margin-bottom: 0%;}
 }
 
 .goat img{
